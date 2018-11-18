@@ -39,6 +39,6 @@ public class SpringMVCConfig implements WebMvcConfigurer {
                 /*拦截的路径*/
                 .addPathPatterns("/**")
                 /*不拦截的路径*/
-                .excludePathPatterns("/login.html","/","/index","/index.html","/user/login");
+                .excludePathPatterns("/login.html","/","/index","/index.html","/user/login","/asserts/**");
     }
 }
