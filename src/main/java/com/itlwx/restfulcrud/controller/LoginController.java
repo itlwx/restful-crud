@@ -13,7 +13,9 @@ public class LoginController {
 
     /*@RequestParam：用于明确指定参数从请求中获取，请求中若没有将报错*/
     @PostMapping(value ="/user/login")
-    public String login(@RequestParam String username, @RequestParam String password, Map<String,Object> map, HttpSession session){
+    public String login(@RequestParam String username,
+                        @RequestParam String password,
+                        Map<String,Object> map, HttpSession session){
 
         if(StringUtils.hasText(password) && "123".equals(password)){
             session.setAttribute("loginUser",username);
