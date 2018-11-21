@@ -8,7 +8,10 @@ spring:
     #指定国际化资源文件的基础名
     basename: i18n.login
 
-
   thymeleaf:
     #将模板引擎的缓存去除
     cache: false
+  mvc:
+    #修改日期格式化模板，默认使用yyyy/MM/dd
+    date-format: yyyy-MM-dd
+

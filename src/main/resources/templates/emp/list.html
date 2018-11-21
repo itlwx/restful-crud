@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0052)http://getbootstrap.com/docs/4.0/examples/dashboard/ -->
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -77,7 +77,7 @@
 									<td>[[${#dates.format(emp.birth, 'yyyy-MM-dd')}]]</td>
 
 									<td>
-										<button class="btn btn-group-sm btn-primary">编辑</button>
+										<a class="btn btn-group-sm btn-primary" th:href="@{/emp}+'/'+${emp.id}">编辑</a>
 										<button class="btn btn-group-sm btn-warning">删除</button>
 									</td>
 
